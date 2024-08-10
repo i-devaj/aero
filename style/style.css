@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CSS Reset */
+
+:root {
+  --font-primary: "Montserrat", sans-serif;
+
+  --color-primary: #ffffff;
+  --color-primary: #c7c8cc;
+
+  --bg-primary: #000000;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  background-image: linear-gradient(
+    165deg,
+    hsl(240deg 95% 84%) 0%,
+    hsl(242deg 96% 87%) 6%,
+    hsl(243deg 97% 90%) 12%,
+    hsl(244deg 98% 93%) 20%,
+    hsl(245deg 100% 97%) 28%,
+    hsl(0deg 0% 100%) 37%,
+    hsl(301deg 87% 97%) 48%,
+    hsl(300deg 85% 94%) 61%,
+    hsl(300deg 84% 90%) 75%,
+    hsl(299deg 84% 87%) 88%,
+    hsl(298deg 83% 84%) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  font-family: var(--font-primary);
+}
+
+body h1 {
+  font-size: 4rem;
+}
+
+body p {
+  font-size: 1.8rem;
+}
+
