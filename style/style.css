@@ -20,35 +20,80 @@ body {
   height: 100vh;
   width: 100%;
 
-  background-image: linear-gradient(
-    165deg,
-    hsl(240deg 95% 84%) 0%,
-    hsl(242deg 96% 87%) 6%,
-    hsl(243deg 97% 90%) 12%,
-    hsl(244deg 98% 93%) 20%,
-    hsl(245deg 100% 97%) 28%,
-    hsl(0deg 0% 100%) 37%,
-    hsl(301deg 87% 97%) 48%,
-    hsl(300deg 85% 94%) 61%,
-    hsl(300deg 84% 90%) 75%,
-    hsl(299deg 84% 87%) 88%,
-    hsl(298deg 83% 84%) 100%
-  );
+  display: flex;
+  flex-direction: row;
 
+  background-image: url("../assets/rain.jpg");
+  background-position: center;
+  background-size: cover;
+  
+  font-family: var(--font-primary);
+
+}
+
+/* ----------------------------------------------------- */
+.container-left {
+  flex: 6;
+  
+  height: 100%;
+  width: 100%;
+  
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  backdrop-filter: brightness(50%);
+
+  font-size: .8rem;
+  font-weight: 700;
+  color: white;
+
+  padding: 8rem;
+}
+
+.weather-info{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+
   gap: 2rem;
-
-  font-family: var(--font-primary);
 }
 
-body h1 {
-  font-size: 4rem;
+.info-group{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
 }
 
-body p {
+.info-group > .temperature-data{
+  font-size: 6rem;
+}
+
+.info-group > .location{
   font-size: 1.8rem;
 }
+
+.info-group > .time-date{
+  font-size: 1.2rem;
+}
+
+.info-group > p{
+  font-size: 1.2rem;
+}
+.info-group > img{
+  height: 2.2rem;
+  width: 2.2rem;
+}
+/* ----------------------------------------------------- */
+.container-right {
+  flex: 4;
+  
+  height: 100%;
+  width: 100%;
+  background-color: #00000058;
+  backdrop-filter: blur(20px);
+}
+
 
